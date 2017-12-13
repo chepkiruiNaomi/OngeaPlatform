@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="16dp"
+    android:weightSum="5"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/itemNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hellen Jane" />
+
+        <TextView
+            android:id="@+id/itemPhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0723444555" />
+
+        <TextView
+            android:id="@+id/itemLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/itemSpec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FGM" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_local_phone_black_24dp"
+            android:id="@+id/imgCall"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/ic_message_black_24dp"
+            android:id="@+id/imgSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

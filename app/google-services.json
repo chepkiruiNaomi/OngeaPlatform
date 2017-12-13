@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "536753414350",
+    "firebase_url": "https://ongeaplatform.firebaseio.com",
+    "project_id": "ongeaplatform",
+    "storage_bucket": "ongeaplatform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536753414350:android:9c01957c6d20136e",
+        "android_client_info": {
+          "package_name": "com.dasayantist.ongeaplatform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536753414350-r62gvjn73e3hlutod2qo4k26i3io8eql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dasayantist.ongeaplatform",
+            "certificate_hash": "7aa6bb00b6ca9b46b50cf154800552b45a3ccf98"
+          }
+        },
+        {
+          "client_id": "536753414350-jerfvu6t4e1794rv3e1sj2k0ehfmgtqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALmGZmtDl4Oz4ez2R1KrMYO2BJZByx2GU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536753414350-jerfvu6t4e1794rv3e1sj2k0ehfmgtqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
