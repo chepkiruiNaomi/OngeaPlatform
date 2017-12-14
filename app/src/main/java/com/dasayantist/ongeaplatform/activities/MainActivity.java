@@ -1,4 +1,4 @@
-package com.dasayantist.ongeaplatform;
+package com.dasayantist.ongeaplatform.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import mehdi.sakout.fancybuttons.FancyButton;
+import com.dasayantist.ongeaplatform.R;
 
 public class MainActivity extends AppCompatActivity {
 Button talk,report,emergency,guide;
@@ -26,13 +26,13 @@ public  void talk(View view){
     startActivity(i);
 }
     public  void report(View view){
-        Intent i = new Intent(MainActivity.this,AddCounsellorActivity.class);
+        Intent i = new Intent(MainActivity.this, ReportToActivity.class);
         startActivity(i);
     }
     public  void emergency(View view){
         Toast.makeText(MainActivity.this,"coming soon....",Toast.LENGTH_SHORT).show();
     }
     public  void guide(View view){
-        Toast.makeText(MainActivity.this,"coming soon....",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MainActivity.this, QuickGuideActivity.class));
     }
 }

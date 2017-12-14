@@ -1,4 +1,4 @@
-package adapters;
+package com.dasayantist.ongeaplatform.adapters;
 
 import android.Manifest;
 import android.app.Activity;
@@ -22,7 +22,7 @@ import com.dasayantist.ongeaplatform.R;
 
 import java.util.ArrayList;
 
-import models.Counsellor;
+import com.dasayantist.ongeaplatform.models.Counsellor;
 
 
 public class CustomListAdapter extends BaseAdapter {
@@ -61,9 +61,11 @@ public class CustomListAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
+
         if (convertView == null) {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
             convertView = inflater.inflate(R.layout.list_item_layout, parent, false);
+
             viewHolder = new ViewHolder();
             viewHolder.itemNames = (TextView) convertView.findViewById(R.id.itemNames);
             viewHolder.itemPhone = (TextView) convertView.findViewById(R.id.itemPhome);
@@ -124,17 +126,14 @@ public class CustomListAdapter extends BaseAdapter {
         text=text.toLowerCase();
         temporaryArray.clear();
 
-        if(text.trim().length()==0)
-        {
+        if(text.trim().length()==0) {
             temporaryArray.addAll(permanentArray);
         }
-        else
-        {
+        else {
             Log.d("SEARCH", "perma_array: "+permanentArray.size());
-            for (Counsellor p:permanentArray)
-            {//p.getName().toLowerCase().contains(text)||
-                if(p.getLocation().toLowerCase().contains(text) ||p.getArea().toLowerCase().contains(text) )
-                {
+            for (Counsellor p:permanentArray) {//p.getName().toLowerCase().contains(text)||
+                if(p.getLocation().toLowerCase().contains(text) ||
+                        p.getArea().toLowerCase().contains(text) ) {
                     temporaryArray.add(p);
                 }
             }

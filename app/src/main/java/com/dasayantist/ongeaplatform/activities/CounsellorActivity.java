@@ -1,4 +1,4 @@
-package com.dasayantist.ongeaplatform;
+package com.dasayantist.ongeaplatform.activities;
 
 import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.ListView;
 
+import com.dasayantist.ongeaplatform.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Map;
 
-import adapters.CustomListAdapter;
-import models.Counsellor;
+import com.dasayantist.ongeaplatform.adapters.CustomListAdapter;
+import com.dasayantist.ongeaplatform.models.Counsellor;
 
 public class CounsellorActivity extends AppCompatActivity {
     ListView list;

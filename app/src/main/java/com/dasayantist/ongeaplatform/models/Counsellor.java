@@ -1,4 +1,4 @@
-package models;
+package com.dasayantist.ongeaplatform.models;
 
 public class Counsellor {
     private String id, name, phone, location, area;

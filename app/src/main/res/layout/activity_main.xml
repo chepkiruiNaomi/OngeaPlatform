@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.dasayantist.ongeaplatform.MainActivity">
+    tools:context="com.dasayantist.ongeaplatform.activities.MainActivity">
 
 
     <LinearLayout
@@ -42,7 +42,7 @@
                 fancy:fb_radius="10dp"
                 fancy:fb_text="Talk to Counsellor"
                 fancy:fb_textColor="#FFFFFF"
-                fancy:fb_textSize="20dp"></mehdi.sakout.fancybuttons.FancyButton>
+                fancy:fb_textSize="20dp"/>
 
             <mehdi.sakout.fancybuttons.FancyButton
                 android:id="@+id/report"
@@ -98,7 +98,7 @@
                 fancy:fb_radius="10dp"
                 fancy:fb_text="Emergency Service"
                 fancy:fb_textColor="#FFFFFF"
-                fancy:fb_textSize="20dp"></mehdi.sakout.fancybuttons.FancyButton>
+                fancy:fb_textSize="20dp"/>
 
             <mehdi.sakout.fancybuttons.FancyButton
                 android:id="@+id/guide"
