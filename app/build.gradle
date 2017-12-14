@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "26.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.dasayantist.ongeaplatform"
@@ -25,8 +25,8 @@ dependencies {
 //        exclude group: 'com.android.support', module: 'support-annotations'
 //    })
 
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:design:23.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:23.4.0'
     compile 'com.github.medyo:fancybuttons:1.8.4'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.google.firebase:firebase-core:11.6.2'
